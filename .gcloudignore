@@ -1,2 +1,5 @@
 .git
 example-success.json
+.travis.yml
+README.md
+.gitignore
