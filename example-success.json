@@ -1,0 +1,73 @@
+{
+  "id": "d5133f8a-684b-4b86-b470-084c030a807d",
+  "projectId": "icco-cloud",
+  "status": "SUCCESS",
+  "source": {
+    "repoSource": {
+      "projectId": "icco-cloud",
+      "repoName": "github-icco-resume",
+      "branchName": "master"
+    }
+  },
+  "steps": [
+    {
+      "name": "gcr.io/cloud-builders/docker",
+      "args": [
+        "build",
+        "-t",
+        "gcr.io/icco-cloud/resume:master",
+        "."
+      ],
+      "timing": {
+        "startTime": "2017-12-25T05:58:25.393414003Z",
+        "endTime": "2017-12-25T06:00:50.494322866Z"
+      }
+    }
+  ],
+  "results": {
+    "images": [
+      {
+        "name": "gcr.io/icco-cloud/resume:master",
+        "digest": "sha256:eee3d5b14b8b808d7f5e0cd1fb0c114af568f600b4fd07885bf89a57460dc777",
+        "pushTiming": {
+          "startTime": "2017-12-25T06:00:50.575450544Z",
+          "endTime": "2017-12-25T06:00:53.865184908Z"
+        }
+      }
+    ],
+    "buildStepImages": [
+      "sha256:331786b295647a4560ed004a46761ee91409e754df7ffa754a67000bd020729a"
+    ]
+  },
+  "createTime": "2017-12-25T05:58:19.916198061Z",
+  "startTime": "2017-12-25T05:58:20.605251101Z",
+  "finishTime": "2017-12-25T06:00:54.317244Z",
+  "timeout": "600.000s",
+  "images": [
+    "gcr.io/icco-cloud/resume:master"
+  ],
+  "logsBucket": "gs://940380154622.cloudbuild-logs.googleusercontent.com",
+  "sourceProvenance": {
+    "resolvedRepoSource": {
+      "projectId": "icco-cloud",
+      "repoName": "github-icco-resume",
+      "commitSha": "1e35752688ef01554335b289863ffc362c1c71c7"
+    }
+  },
+  "buildTriggerId": "4d5a8b19-fd90-488f-a8ce-1b3cc4ae6e76",
+  "logUrl": "https://console.cloud.google.com/gcr/builds/d5133f8a-684b-4b86-b470-084c030a807d?project=icco-cloud",
+  "timing": {
+    "BUILD": {
+      "startTime": "2017-12-25T05:58:25.393402358Z",
+      "endTime": "2017-12-25T06:00:50.575121684Z"
+    },
+    "FETCHSOURCE": {
+      "startTime": "2017-12-25T05:58:22.193188754Z",
+      "endTime": "2017-12-25T05:58:25.382028569Z"
+    },
+    "PUSH": {
+      "startTime": "2017-12-25T06:00:50.575448426Z",
+      "endTime": "2017-12-25T06:00:53.865210614Z"
+    }
+  }
+}
