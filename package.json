@@ -2,7 +2,7 @@
   "name": "gcr-update",
   "version": "0.0.1",
   "description": "A cloud function for turning GCR builds into k8s deploys",
-  "main": "function.js",
+  "main": "index.js",
   "repository": "git@github.com:icco/gcr-update.git",
   "author": "Nat Welch <nat@natwelch.com>",
   "license": "MIT",
