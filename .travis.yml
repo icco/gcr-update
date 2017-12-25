@@ -29,7 +29,8 @@ before_deploy:
 deploy:
   - provider: script
     script:
-      - gcloud --quiet beta functions deploy deploy-gcr --source . --trigger-topic projects/icco-cloud/topics/cloud-builds
+      - ls -al .
+      - gcloud --quiet beta functions deploy deploy-gcr --source . --trigger-topic cloud-builds
     skip_cleanup: true
     on:
       branch: master
