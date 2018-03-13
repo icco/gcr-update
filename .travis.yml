@@ -22,8 +22,8 @@ before_deploy:
 
   # use the decrypted service account credentials to authenticate the command line tool
   # get the encrypted variable names from travis cli: https://docs.travis-ci.com/user/encrypting-files/
-  #- openssl aes-256-cbc -K $TRAVIS_ENCRYPTED_key -iv $TRAVIS_ENCRYPTED_iv -in gcloud-service-key.json.enc -out gcloud-service-key.json -d
-  #- gcloud auth activate-service-account --key-file gcloud-service-key.json
+  - openssl aes-256-cbc -K $TRAVIS_ENCRYPTED_key -iv $TRAVIS_ENCRYPTED_iv -in gcloud-service-key.json.enc -out gcloud-service-key.json -d
+  - gcloud auth activate-service-account --key-file gcloud-service-key.json
   - gcloud config set project icco-cloud
 
 deploy:
